@@ -75,13 +75,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Déchargement des données de la table `user`
 --
 
-INSERT INTO `user` (`id`, `lastname`, `firstname`, `pseudonym`, `password`, `mail`, `phone`) VALUES
-(11, 'fontaine', 'elouan', 'elouan', '$2y$10$3Cgta8R24frO3s5SIbIAMe78bmEloaIOC7X5iS.zgdpb8aH5NYI2q', 'jgfhfjgfjhgfjhg@bvjhjgcdhgf.com', '0304070800'),
-(2, 'orblin', 'marie', 'mimimouche', '03022008', 'marie.orblin@gmail.com', '0683179395'),
-(3, 'fulu', 'toto', 'gang', '2910', 'fhdjdsl@fljsks.com', '0305152448'),
-(9, 'jean', 'pascaldelamotte', 'ganglerouge', '$2y$10$QSfFa7dE0G7K6yEMnWyK5u9K8LgGUrgek2iWxj8jJ96BV2o2BS6hy', 'ggtoptefede@gkrirfrk.com', '0412457889'),
-(12, 'daki', 'daki', 'daki', '$2y$10$a.aCknTYknArEwynvbasbu43TxP1VoL9fonK2sgnQWlep1QTwRD02', 'daki', '03222222132');
-COMMIT;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
