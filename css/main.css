@@ -1,0 +1,540 @@
+
+/*-------------RESET-----------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------Site-----------*/
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+body .container{
+    background-color: #885C7E;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    letter-spacing: 1.2px;
+    font-family: 'Oswald', sans-serif;
+    color: whitesmoke;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+h2{
+    font-size: 1.2rem;
+    font-weight: 900;
+
+}
+a{
+    display: flex;
+    text-decoration: none;
+    color: #88002D;
+}
+a:link{
+    color: #88002D;
+}
+#logo{
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 10px; 
+}
+.img{
+    margin-left: 5px;
+    margin: auto;
+    width: 20%; /*breakpoint a prevoir*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    width: 80%;
+}
+
+/*-----------------HEADER----------------------*/
+
+header .container{
+    /* position: relative; */
+    display: block;
+    border-top: 35px solid #3E0018;
+    border-bottom: 35px solid #3E0018;
+    padding-bottom: 5px;
+    background-color: #885C7E;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: right;
+    width: 100%;
+}
+header .container .row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header .container .icondoor{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+header .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #88002D;
+}
+header .container .userEntrance{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 10px;
+}
+header .newaccount a{
+    border: 1px solid;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+header .newaccount a:hover{
+    background-color: #88002D;
+    color: whitesmoke;
+}
+#blackbottle{
+    height: 160px;
+    width: 220px;
+    align-self: center;
+}
+
+/*-----------------SECTION----------------------*/
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+section .acceuil{
+    width: 100%;   
+}
+section .acceuil .container .row{
+    box-shadow: inset -3px 1px 10px black;
+}
+section .acceuil .container .row .single{
+    padding: 15px 0;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+    background-color: white;
+    border-bottom: 1px solid #3E0018;
+    display: flex;
+    box-shadow: 4px 5px 13px 2px black;
+}
+.title_bottle{
+    text-align: center;
+}
+.sub{
+    text-align: center;
+    margin: 2px;
+    font-weight: 600;
+    font-size: smaller;
+}
+.info{
+    padding: 80px 10px;
+}
+.actionBottle{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.actionBottle i{
+    cursor: pointer;
+}
+.addBottle{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    cursor: pointer;
+}
+.addBottle p{
+    font-size: smaller;
+    margin-right: 10px;
+}
+img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+section .search{
+    display: flex;
+    flex-direction: column;
+    width: 0%;
+    background-color: #885C7E;
+    border-left: 10px solid #3E0018;
+}
+.registerOk{
+    padding-bottom: 370px;
+}
+/*---------FILTER---------------------------------*/
+
+.filter{
+    display: flex;
+    justify-content: center;
+    background-color: #885C7E;
+}
+.filter form{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: #88002D;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
+.filter label{
+    width: 80%;
+}
+.filter select{
+    align-self: center;
+    width: 80%;
+}
+.filter input[type="submit"]{
+    margin-top: 5px;
+}
+.addFilter{
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #885C7E;
+}
+.addFilter p{
+    border: 1px solid #88002D;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+.addFilter p:hover{
+    cursor: pointer;
+    background-color: #88002D;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+/*---------FORMULAIRE--------------------------------*/
+
+form{
+    border-radius: 10px 10px 10px 10px;
+    background-color: whitesmoke;
+    height: 200px;
+    width: 300px;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+textarea{
+    align-self: center;
+    width: 65%;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+.modal form{
+    height: 500px;
+}
+#form_create{
+    border-radius: 10px 10px 10px 10px;
+    background-color: whitesmoke;
+    font-size: 0.8rem;
+    height: 360px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label{
+    padding-bottom: 5px;
+}
+input[type="submit"], input[type="text"], label, input[type="number"], input[type="file"] {
+    width: 50%;
+    align-self: center;
+    border-radius: 2px;
+    padding: 3px;
+}
+input[type="file"]{
+    width: 55%;
+}
+#mdp{
+    margin-bottom: 20px;
+}
+#phone{
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    width: 40%;
+    border-radius: 10px 10px 10px 10px;
+}
+#myModal{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 10px;
+    left: 1px;
+}
+#myModal form{
+    background-color: #88002D;
+    border: 3px solid #3E0018;
+    box-shadow: 5px 11px 12px #130202c7;
+}
+#myModal label {
+    color: white;
+    margin-top: 4px;
+    font-size: small;
+}
+#myModal h3{
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#picture{
+    display: block;
+}
+.fakeImg{
+    display: flex;
+}
+.fakeImgBtn{
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    width: 20%;
+    margin: 5px auto;
+}
+.fakeImgBtn:hover{
+    background-color: whitesmoke;
+    color: #88002D;
+}
+.fakeImgInput{
+    margin-right: 25px;
+    border: 0;
+    background-color: #88002D;
+    color: whitesmoke;
+}
+.confirm{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.cancel{
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.canceldiv{
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.canceldiv p{
+    align-self: center;
+}
+.canceldiv:hover{
+    background-color: whitesmoke;
+    color: #88002D;
+}
+.modalDelet{
+    border: 2px solid white;
+    height: 80px;
+    background-color: #88002D;
+    border-radius: 5px;
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px; 
+}
+.modalDelet p{
+    margin-bottom: 10px;
+}
+.modalDelet a{
+    align-self: flex-end;
+    color: white;
+    padding-bottom: 25px;
+}
+/*---------------PAGINATE----------------------*/
+.paginate{
+    display: flex;
+    margin: 10px auto;
+}
+.page{
+    font-size: xx-large;
+    margin-left: 10px;
+    background-color: #64304A;
+    color: whitesmoke;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+
+/*-------------FOOTER----------------------------*/
+
+footer{
+    display: flex;
+    color: whitesmoke;
+}
+footer .container{
+    background-color: #3E0018;
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: -4px -1px 8px 0px black;
+}
+footer a{
+    color: whitesmoke;
+}
+footer a:link{
+    color: whitesmoke;
+}
+.col1{
+    width: 33.3333%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.col1 a{
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.col1 i{
+    justify-self: flex-end;
+}
+.col1 .fa-user{
+    padding-right: 2px;
+}
+.col2{
+    width: 33.3333%;
+    display: flex;
+    justify-content: center;
+}
+.col3{
+    width: 33.3333%;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+.col3 a{
+    display: flex;
+    width: 33.3333%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.col4{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+/*----------------BREAKPOINT----------------*/
+
+@media only screen and (max-width: 474px){
+    .actionBottle{
+        justify-content: space-between;
+        padding-left: 10px;
+    }
+    .img{
+        overflow:unset;
+        width: unset;
+        margin: 25px auto;
+    }
+    .text{
+        width: unset;
+    }
+    .single{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 538px){
+    footer .container{
+        justify-content: space-around;
+    }
+    footer i{
+        visibility: hidden;
+    }
+    .col1{
+        width: 45%;
+    }
+    .col2{
+        display: none;
+    }
+    .col3{
+        width: 45%;
+    }
+    .col4{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 1005px){
+    footer i{
+        visibility: hidden;
+    }
+}
